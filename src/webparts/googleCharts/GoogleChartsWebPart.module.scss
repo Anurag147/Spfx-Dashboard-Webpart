@@ -1,0 +1,153 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.googleCharts {
+  .SupplierData{
+    background-color: green;
+    width: 200px;
+    min-height: 150px;
+    border: 1px solid green;
+    box-shadow: 0 2px 3px green;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    float: left; 
+    opacity: 0.7;
+    border-radius: 15px;
+    transition: transform .2s;
+}
+
+.Datacard{
+  height: 175px;
+  overflow-y:scroll;
+  margin-bottom:30px;
+}
+
+.AddData{
+  margin-top:50px;
+  background-color:#b5ffcb;
+  border-radius:15px;
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+.AddDataHeader{
+  height:30px;
+  background-color:green;
+  text-align:center;
+  font-weight:bold;
+  color:white
+}
+
+.NoMargin{
+  margin-left:5px;
+  margin-right:5px;
+}
+.TopPadding{
+  padding-top:20px;
+}
+.LabelCard{
+  color:white;
+  text-align:center;
+  font-weight:bold
+}
+.SupplierData:hover{
+   opacity: 1;
+   -ms-transform: scale(1.1); /* IE 9 */
+    transform: scale(1.1); 
+}   
+    .CustomTable {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+        border-collapse: collapse !important;
+        width: 100% !important;
+        background-color: white !important;
+        cursor: pointer;
+      }
+      
+      .CustomTable td{
+        border: 1px solid #b5ffcb !important;
+        text-align: center !important;
+      }
+    
+      .CustomTable tr:hover {background-color: greenyellow;}
+      
+      .CustomTable th {
+        padding: 8px !important;
+        text-align: center !important;
+        background-color: green !important;
+        color: white;
+        height: 30px !important;
+      }
+
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
